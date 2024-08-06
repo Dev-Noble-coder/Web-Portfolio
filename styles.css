@@ -1,0 +1,82 @@
+.pad{
+    margin-left: 60px;
+}
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 10px;
+    text-align: center;
+}
+.displayGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.grid{
+    margin-top: 40px;
+}
+.grid h2{
+    padding-bottom: 30px;
+}
+.proj{
+    text-align: center;
+}
+.proj h3{
+    padding-bottom: 20px;
+}
+.abt h2{
+    text-align: center;
+   
+}
+.abt span{
+    color: rgba(220, 53, 69, 1);
+}
+.proj span{
+    color: rgba(220, 53, 69, 1);
+}
+
+@media screen and (max-width:991px){
+    .carousel-item iframe{
+        max-width: 400px;
+       
+    }
+    .displayGrid{
+       
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: 1fr 1fr ;
+    
+    }
+}
+@media screen and (max-width:576px){
+    .displayGrid{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr  ;
+       
+    }
+}
+.first{
+    grid-row: span 2;
+    position: relative;
+}
+
+
+.first p{
+    position: absolute;
+    top: 50%;
+    
+    font-size: 30px;
+}
+.expertise{
+    background-color: rgba(43, 48, 53, 1);
+    padding: 15px;
+}
+.expertise p,span{
+    font-weight: 600;
+}
